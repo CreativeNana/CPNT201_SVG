@@ -1,0 +1,11 @@
+  .element {
+      
+    /* Apply river image and background color */
+    background-image: url(images/white-sea.svg);
+
+    /* Place Background Image at Top - With the bottom center of the image as a reference point */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain 300px 200px; 
+
+}

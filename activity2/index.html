@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Starter</title>
+
+  <!-- Your code here -->
+  <style>
+    /* Using classes in your inline SVG change the fill color so that the SVG is presented with two or more colours. How else can you style SVGs? */
+    .html body main {
+      margin: 0; 
+      padding: 0;
+    }
+
+    main {
+      margin: 3em; 
+
+      display: flex;
+
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .element{
+      /* Apply river image and background color */
+      background-image: url(images/white-sea.svg);
+  
+      /* Place Background Image at Top - With the bottom center of the image as a reference point */
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+
+      border-radius: 50%;
+
+      padding: 200px; 
+      height: 100%;
+
+      margin: 1em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+  <!-- Insert SVG as `img` element -->
+    <img src="images/square.svg" 
+         alt="square"
+         height="300" width="300"/>
+    
+    <img src="images/polygon.svg" 
+         alt="polygon"
+         height="300" width="300" />
+
+    <img src="images/star.svg" 
+         alt="star"
+         height="300" width="300" />
+
+    <!-- Insert SVG as a CSS `background-image` -->
+    <div class="element"></div>
+
+    <!-- Insert as inline `svg` element --> 
+    <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="150" cy="150" r="120" fill="#8EC574" stroke="forestgreen" stroke-width="50"/>
+     </svg>
+
+    <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1.0" y="1.0" width="295" height="295" fill="#E8B8A8" stroke="brown" stroke-width="20"/>
+    </svg>
+
+    <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1.5" y="1.5" width="297" height="297" fill="#FC64FF" stroke="#39054B" stroke-width="3"/>
+    </svg>
+      
+
+    <!-- Identify and label the important bits with classes. -->
+  </main>
+</body>
+</html>
